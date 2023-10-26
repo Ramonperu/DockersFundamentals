@@ -76,6 +76,6 @@ Ventajas y caracteristicas:
 
 Para iniciar la instalación del WSL hemos de seguir la documentación oficial de 
 
-[Windows]: https://learn.microsoft.com/es-es/windows/wsl/install
+[Windows]: https://learn.microsoft.com/es-es/windows/wsl/install	"Windows"
 
  

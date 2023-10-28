@@ -57,180 +57,173 @@ Aquí tienes un resumen de algunos comandos básicos de Docker que te serán út
 
 1. **`docker pull`:**
 
-   - Descarga una imagen de Docker desde un registro (por defecto, Docker Hub).
+   Descarga una imagen de Docker desde un registro (por defecto, Docker Hub).
 
-     ```
-     docker pull nombre_de_la_imagen
-     ```
+   ```
+   docker pull nombre_de_la_imagen
+   ```
 
 2. **`docker run`:**
 
-   - Crea y ejecuta un contenedor a partir de una imagen.
+   Crea y ejecuta un contenedor a partir de una imagen.
 
-     ```
-     docker run nombre_de_la_imagen
-     ```
+   ```
+   docker run nombre_de_la_imagen
+   ```
 
 3. **`docker ps`:**
 
-   - Muestra los contenedores en ejecución.
+   Muestra los contenedores en ejecución.
 
-     ```
-     docker ps
-     ```
+   ```
+   docker ps
+   ```
 
 4. **`docker ps -a`:**
 
-   - Muestra todos los contenedores, incluso los que no están en ejecución.
+   Muestra todos los contenedores, incluso los que no están en ejecución.
 
-     ```
-     docker ps -a
-     ```
+   ```
+   docker ps -a
+   ```
 
 5. **`docker stop`:**
 
-   - Detiene un contenedor en ejecución.
+   Detiene un contenedor en ejecución.
 
-     ```
-     docker stop ID_del_contenedor
-     ```
+   ```
+   docker stop ID_del_contenedor
+   ```
 
 6. **`docker rm`:**
 
-   - Elimina un contenedor.
+   Elimina un contenedor.
 
-     ```
-     docker rm ID_del_contenedo
-     ```
+   ```
+   docker rm ID_del_contenedo
+   ```
 
 7. **`docker images` o `docker image ls`:**
 
-   - Muestra las imágenes descargadas en la máquina.
+   Muestra las imágenes descargadas en la máquina.
 
-     ```
-     docker images
-     ```
+   ```
+   docker images
+   ```
 
 8. **`docker rmi`:**
 
-   - Elimina una imagen de Docker.
+   Elimina una imagen de Docker.
 
-     ```
-     docker rmi nombre_de_la_imagen
-     ```
+   ```
+   docker rmi nombre_de_la_imagen
+   ```
 
 9. **`docker exec`:**
 
-   - Ejecuta un comando en un contenedor en ejecución.
+   Ejecuta un comando en un contenedor en ejecución.
 
-     ```
-     docker exec ID_del_contenedor comando
-     ```
+   ```
+   docker exec ID_del_contenedor comando
+   ```
 
 10. **`docker build`:**
 
-    - Construye una imagen a partir de un Dockerfile.
+    Construye una imagen a partir de un Dockerfile.
 
-      ```
-      docker build -t nombre_de_la_imagen ruta_del_Dockerfile
-      ```
+    ```
+    docker build -t nombre_de_la_imagen ruta_del_Dockerfile
+    ```
 
 11. **`docker-compose`:**
 
-    - Gestiona aplicaciones multi-contenedor utilizando un archivo YAML (docker-compose.yml) para definir la configuración.
+    Gestiona aplicaciones multi-contenedor utilizando un archivo YAML (docker-compose.yml) para definir la configuración.
 
-      ```
-      docker-compose up
-      ```
+    ```
+    docker-compose up
+    ```
 
 12. **`docker logs`:**
 
-    - Muestra los logs de un contenedor en ejecución.
+    Muestra los logs de un contenedor en ejecución.
 
-      ```
-      docker logs ID_del_contenedor
-      ```
+    ```
+    docker logs ID_del_contenedor
+    ```
 
 13. **`docker-compose down`:**
 
-    - Detiene y elimina todos los servicios y contenedores definidos en el archivo `docker-compose.yml`. También puede eliminar las redes y volúmenes asociados.
+    Detiene y elimina todos los servicios y contenedores definidos en el archivo `docker-compose.yml`. También puede eliminar las redes y volúmenes asociados.
 
-      ```
-      docker-compose down
-      ```
+    ```
+    docker-compose down
+    ```
 
 14. **`docker container top`:**
 
-    - Este comando se utiliza para mostrar los procesos que se están ejecutando dentro de un contenedor específico. Proporciona una visión de los procesos activos dentro del espacio de nombres del contenedor, similar a la salida del comando `top` en sistemas Linux
+    Este comando se utiliza para mostrar los procesos que se están ejecutando dentro de un contenedor específico. Proporciona una visión de los procesos activos dentro del espacio de nombres del contenedor, similar a la salida del comando `top` en sistemas Linux
 
-      ```
-      docker container top nombre_del_contenedor
-      ```
+    ```
+    docker container top nombre_del_contenedor
+    ```
 
 15. **`docker container inspect`:**
 
-    - Se utiliza para obtener información detallada sobre un contenedor. Proporciona un formato JSON con detalles sobre la configuración, redes, volúmenes, variables de entorno y más.
+    Se utiliza para obtener información detallada sobre un contenedor. Proporciona un formato JSON con detalles sobre la configuración, redes, volúmenes, variables de entorno y más.
 
-      ```
-      docker container inspect nombre_del_contenedor
-      ```
-
+    ```
+    docker container inspect nombre_del_contenedor
+    ```
 
 16. **`docker container stats`:**
 
-    - Este comando muestra estadísticas en tiempo real sobre el uso de recursos del contenedor, como CPU, memoria y redes. Proporciona una interfaz de estilo "top" para monitorear el rendimiento del contenedor
+    Este comando muestra estadísticas en tiempo real sobre el uso de recursos del contenedor, como CPU, memoria y redes. Proporciona una interfaz de estilo "top" para monitorear el rendimiento del contenedor
 
-      ```
-      docker container stats nombre_del_contenedor
-      ```
-
+    ```
+    docker container stats nombre_del_contenedor
+    ```
 
 17. **`docker-compose down`:**
 
-    - Detiene y elimina todos los servicios y contenedores definidos en el archivo `docker-compose.yml`. También puede eliminar las redes y volúmenes asociados.
+    Detiene y elimina todos los servicios y contenedores definidos en el archivo `docker-compose.yml`. También puede eliminar las redes y volúmenes asociados.
 
-      ```
-      docker-compose down
-      ```
-
+    ```
+    docker-compose down
+    ```
 
 18. **`docker container run -it`:**
 
-    - Este comando inicia un contenedor de forma interactiva, lo que significa que te conectas directamente a la consola del contenedor. El flag `-it` combina dos opciones:
-      - `-i` o `--interactive`: Mantiene abierta la entrada estándar del contenedor.
-      - `-t` o `--tty`: Asocia un seudoterminal (TTY) para permitir la interacción.
-      
-      ```
-      docker container run -it nombre_de_la_imagen
-      ```
+    Este comando inicia un contenedor de forma interactiva, lo que significa que te conectas directamente a la consola del contenedor. El flag `-it` combina dos opciones:
+    - `-i` o `--interactive`: Mantiene abierta la entrada estándar del contenedor.
+    - `-t` o `--tty`: Asocia un seudoterminal (TTY) para permitir la interacción.
 
+    ```
+    docker container run -it nombre_de_la_imagen
+    ```
 
 19. **`docker container exec -it`:**
 
-    - Este comando se utiliza para ejecutar un comando adicional en un contenedor que ya está en ejecución. El flag `-it` se utiliza de manera similar al comando `docker container run`..
+    Este comando se utiliza para ejecutar un comando adicional en un contenedor que ya está en ejecución. El flag `-it` se utiliza de manera similar al comando `docker container run`..
 
-      ```
-      docker container exec -it nombre_del_contenedor comando_adicional
-      ```
-
+    ```
+    docker container exec -it nombre_del_contenedor comando_adicional
+    ```
 
 20. **`docker container run --help`:**
 
-    - Este comando muestra la ayuda y documentación relacionada con el comando `docker container run`. Proporciona información sobre las opciones disponibles y la sintaxis del comando.
+    Este comando muestra la ayuda y documentación relacionada con el comando `docker container run`. Proporciona información sobre las opciones disponibles y la sintaxis del comando.
 
-      ```
-      docker container run --help
-      ```
-
+    ```
+    docker container run --help
+    ```
 
 21. **`docker run --rm`:**
 
-    - Este comando crea y ejecuta un contenedor a partir de una imagen. El flag `--rm` asegura que el contenedor se elimine automáticamente una vez que se detenga.
+    Este comando crea y ejecuta un contenedor a partir de una imagen. El flag `--rm` asegura que el contenedor se elimine automáticamente una vez que se detenga.
 
-      ```
-      docker run --rm nombre_de_la_imagen
-      ```
-
+    ```
+    docker run --rm nombre_de_la_imagen
+    ```
 
 
 
@@ -438,3 +431,4 @@ Que responderá con un ID unico:
 
 
 
+ 

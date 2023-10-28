@@ -235,7 +235,7 @@ Algunas de las imágenes disponibles en Docker mas conocidas, ampliamente usadas
 
 **Ubuntu:**
 
-- La imagen oficial de Ubuntu proporciona un sistema base Ubuntu que se utiliza comúnmente para aplicaciones que requieren un entorno Linux.
+La imagen oficial de Ubuntu proporciona un sistema base Ubuntu que se utiliza comúnmente para aplicaciones que requieren un entorno Linux.
 
 ```bash
 docker pull ubuntu
@@ -243,7 +243,7 @@ docker pull ubuntu
 
 **Alpine Linux:**
 
-- Alpine Linux es conocida por ser una distribución Linux muy ligera y segura, lo que la hace popular en entornos de contenedores.
+Alpine Linux es conocida por ser una distribución Linux muy ligera y segura, lo que la hace popular en entornos de contenedores.
 
 ```bash
 docker pull alpine
@@ -251,7 +251,7 @@ docker pull alpine
 
 **Nginx:**
 
-- La imagen oficial de Nginx se utiliza para ejecutar servidores web basados en el servidor Nginx.
+La imagen oficial de Nginx se utiliza para ejecutar servidores web basados en el servidor Nginx.
 
 ```bash
 docker pull nginx
@@ -259,7 +259,7 @@ docker pull nginx
 
 **Node.js:**
 
-- La imagen oficial de Node.js es esencial para desarrolladores de JavaScript que desean ejecutar aplicaciones Node.js en contenedores.
+La imagen oficial de Node.js es esencial para desarrolladores de JavaScript que desean ejecutar aplicaciones Node.js en contenedores.
 
 ```bash
 docker pull node
@@ -267,7 +267,7 @@ docker pull node
 
 **MySQL:**
 
-- La imagen oficial de MySQL se utiliza para ejecutar servidores de bases de datos MySQL en contenedores.
+La imagen oficial de MySQL se utiliza para ejecutar servidores de bases de datos MySQL en contenedores.
 
 ```bash
 docker pull mysql
@@ -275,7 +275,7 @@ docker pull mysql
 
 **PostgreSQL:**
 
-- Similar a MySQL, la imagen oficial de PostgreSQL es utilizada para ejecutar servidores de bases de datos PostgreSQL.
+Similar a MySQL, la imagen oficial de PostgreSQL es utilizada para ejecutar servidores de bases de datos PostgreSQL.
 
 ```bash
 docker pull postgres
@@ -283,7 +283,7 @@ docker pull postgres
 
 **MongoDB:**
 
-- La imagen oficial de MongoDB se utiliza para ejecutar servidores de bases de datos MongoDB en contenedores.
+La imagen oficial de MongoDB se utiliza para ejecutar servidores de bases de datos MongoDB en contenedores.
 
 ```bash
 docker pull mongo
@@ -291,7 +291,7 @@ docker pull mongo
 
 **Redis:**
 
-- La imagen oficial de Redis se utiliza para ejecutar servidores de almacenamiento en caché y bases de datos en memoria.
+La imagen oficial de Redis se utiliza para ejecutar servidores de almacenamiento en caché y bases de datos en memoria.
 
 ```bash
 docker pull redis
@@ -299,7 +299,7 @@ docker pull redis
 
 **Python:**
 
-- La imagen oficial de Python es esencial para desarrolladores de Python que desean ejecutar aplicaciones Python en contenedores.
+La imagen oficial de Python es esencial para desarrolladores de Python que desean ejecutar aplicaciones Python en contenedores.
 
 ```bash
 docker pull python
@@ -307,7 +307,7 @@ docker pull python
 
 **Microsoft .NET Core:**
 
-- Para desarrolladores que trabajan con aplicaciones basadas en .NET Core, la imagen oficial de Microsoft .NET Core es clave.
+Para desarrolladores que trabajan con aplicaciones basadas en .NET Core, la imagen oficial de Microsoft .NET Core es clave.
 
 ```bash
 docker pull mcr.microsoft.com/dotnet/core/runtime
@@ -320,17 +320,23 @@ Es una característica de Windows que permite ejecutar un entorno Linux directam
 Ventajas y caracteristicas:
 
 - **Entorno Linux en Windows:**
-  - WSL permite ejecutar distribuciones de Linux, como Ubuntu, Debian y otras, directamente en un sistema Windows sin la necesidad de una máquina virtual.
+  
+  WSL permite ejecutar distribuciones de Linux, como Ubuntu, Debian y otras, directamente en un sistema Windows sin la necesidad de una máquina virtual.
 - **Interoperabilidad:**
-  - Facilita la interoperabilidad entre aplicaciones y herramientas diseñadas para Linux y el entorno Windows. Puedes ejecutar comandos de Linux en la línea de comandos de Windows y viceversa.
+  
+  Facilita la interoperabilidad entre aplicaciones y herramientas diseñadas para Linux y el entorno Windows. Puedes ejecutar comandos de Linux en la línea de comandos de Windows y viceversa.
 - **Sin Necesidad de Máquina Virtual:**
-  - A diferencia de las máquinas virtuales tradicionales, WSL no requiere una máquina virtual separada. Utiliza una tecnología de traducción de llamadas de sistema para integrar los entornos.
+  
+  A diferencia de las máquinas virtuales tradicionales, WSL no requiere una máquina virtual separada. Utiliza una tecnología de traducción de llamadas de sistema para integrar los entornos.
 - **Soporte para Desarrollo:**
-  - WSL es especialmente útil para desarrolladores que trabajan en entornos mixtos. Permite usar herramientas y utilidades de desarrollo de Linux junto con las herramientas de desarrollo de Windows.
+  
+  WSL es especialmente útil para desarrolladores que trabajan en entornos mixtos. Permite usar herramientas y utilidades de desarrollo de Linux junto con las herramientas de desarrollo de Windows.
 - **Versiones de WSL:**
-  - Hasta mi última actualización en enero de 2022, WSL tenía dos versiones principales: WSL 1 y WSL 2. WSL 1 utiliza una traducción de llamadas de sistema, mientras que WSL 2 utiliza una máquina virtual ligera para ofrecer mejor rendimiento y compatibilidad.
+  
+  Hasta mi última actualización en enero de 2022, WSL tenía dos versiones principales: WSL 1 y WSL 2. WSL 1 utiliza una traducción de llamadas de sistema, mientras que WSL 2 utiliza una máquina virtual ligera para ofrecer mejor rendimiento y compatibilidad.
 - **Docker en WSL 2:**
-  - WSL 2 es especialmente popular entre los desarrolladores porque mejora la compatibilidad con Docker. Puedes ejecutar contenedores Docker directamente en el entorno WSL 2.
+  
+  WSL 2 es especialmente popular entre los desarrolladores porque mejora la compatibilidad con Docker. Puedes ejecutar contenedores Docker directamente en el entorno WSL 2.
 
 
 
